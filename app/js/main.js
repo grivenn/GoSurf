@@ -15,6 +15,11 @@ $(function () {
         asNavFor: '.header__slider',
     });
 
+    $('.serf-slider__wrap').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+    }); 
+
 
 
 });
