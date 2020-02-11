@@ -18,6 +18,8 @@ $(function () {
     $('.serf-slider__wrap').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
+        prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="" />',
+        nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="" />',
     }); 
 
 
