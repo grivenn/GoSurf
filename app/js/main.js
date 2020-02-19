@@ -22,6 +22,14 @@ $(function () {
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="" />',
     }); 
 
+    $('.slider-map').slick({
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.serf-slider__wrap',
+        focusOnSelect: true
+    })
+
 
 
 });
