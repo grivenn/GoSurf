@@ -15,9 +15,10 @@ $(function () {
         asNavFor: '.header__slider',
     });
 
-    $('.serf-slider__wrap').slick({
+    $('.surf-slider__wrap').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
+        asNavFor: '.slider-map',
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="" />',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="" />',
     }); 
@@ -26,9 +27,9 @@ $(function () {
         slidesToShow: 8,
         slidesToScroll: 1,
         arrows: false,
-        asNavFor: '.serf-slider__wrap',
+        asNavFor: '.surf-slider__wrap',
         focusOnSelect: true
-    })
+    });
 
 
 

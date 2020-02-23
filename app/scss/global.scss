@@ -35,7 +35,7 @@ li {
   position: relative;
 }
 
-.headline-left {
+.headline{
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 7.33333px;
@@ -52,7 +52,13 @@ li {
     background-color: #fff;
     left: 0;
     top: 50%;
+  .headline-left {
+    }
+  .headline-right {
+    text-align: left;
+    }
   }
+
 }
 
 .title {
@@ -99,6 +105,22 @@ li {
   }
 }
 
+.descr {
+  display: inline-block;
+  // text-align: right;
+  position: absolute;
+  right: 80px;
+  margin-top: -80px;
+  &__head {
+    font-weight: 800;
+    font-size: 40px;
+    padding-right: 10px;
+    span{
+      font-weight: 100;
+    }
+  }
+}
+
 .btn{
   font-weight: 800;
   line-height: 36px;
@@ -130,3 +152,12 @@ li {
     }
   }
 }
+
+
+.surf,
+.travel,
+.sleep,
+.shop {
+  padding: 160px 0 0;
+}
+
