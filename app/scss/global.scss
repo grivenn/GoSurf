@@ -35,7 +35,8 @@ li {
   position: relative;
 }
 
-.headline{
+.headline-left,
+.headline-right {
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 7.33333px;
@@ -44,6 +45,7 @@ li {
   padding-left: 103px;
   position: relative;
   display: inline-block;
+  margin-bottom: 10px;
   &::before {
     content: "";
     position: absolute;
@@ -52,14 +54,18 @@ li {
     background-color: #fff;
     left: 0;
     top: 50%;
-  .headline-left {
-    }
-  .headline-right {
-    text-align: left;
-    }
   }
-
 }
+
+.headline-right {  
+  padding: 0 103px 0 0;  
+  margin-bottom: 3px;
+  &::before {    
+    left: inherit;    
+    right: 0;
+  }
+}
+
 
 .title {
   span {
@@ -99,7 +105,7 @@ li {
     font-weight: 800;
     font-size: 40px;
     padding-right: 10px;
-    span{
+    span {
       font-weight: 100;
     }
   }
@@ -107,32 +113,33 @@ li {
 
 .descr {
   display: inline-block;
-  // text-align: right;
-  position: absolute;
-  right: 80px;
-  margin-top: -80px;
+  margin-left: 132px;
+  // text-align: left;
+  // position: absolute;
+  // right: 80px;
+  // margin-top: -80px;
   &__head {
     font-weight: 800;
     font-size: 40px;
     padding-right: 10px;
-    span{
+    span {
       font-weight: 100;
     }
   }
 }
 
-.btn{
+.btn {
   font-weight: 800;
   line-height: 36px;
   font-size: 40px;
-  span{
+  span {
     padding: 17px 57px 15px 17px;
     background-color: $green;
     display: inline-block;
     margin-left: 19px;
     position: relative;
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       width: 20px;
       height: 1px;
@@ -140,8 +147,8 @@ li {
       top: 50%;
       left: -10px;
     }
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
       width: 25px;
       height: 21px;
@@ -153,11 +160,9 @@ li {
   }
 }
 
-
 .surf,
 .travel,
 .sleep,
 .shop {
   padding: 160px 0 0;
 }
-

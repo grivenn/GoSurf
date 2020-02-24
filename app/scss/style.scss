@@ -472,7 +472,7 @@
 }
 
 .travel {
-  background-image: url(../img/travel-slider-bg.png);
+  background-image: url(../img/travel-glass.png);
   background-position: bottom right;
   background-repeat: no-repeat;
 }
@@ -483,8 +483,13 @@
     background-position: top left;
     min-height: 780px;
   }
-  &-descr {
-
+  &__descr{
+    img{
+      padding-left: 24px;
+    }
+  }
+  &__subtitle {
+    padding-top: 132px;
   }
 }
 
